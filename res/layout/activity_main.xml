@@ -1,0 +1,84 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android-bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.baselayoutsample.MainActivity"
+            tools:ignore="MergeRootFrame" >
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#fafafa"
+        android:orientation="vertical" >
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/button_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="買い物リスト　　　　　　　　 "
+            bootstrapbutton:bb_icon_left="fa-chevron-circle-right"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="small"
+            bootstrapbutton:bb_type="success" >
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/button_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="カテゴリ追加　　　　　　　 　"
+            bootstrapbutton:bb_icon_left="fa-chevron-circle-right"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="small"
+            bootstrapbutton:bb_type="success" >
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/button_bought"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="今まで買ったもの　　　　　 　"
+            bootstrapbutton:bb_icon_left="fa-chevron-circle-right"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="small"
+            bootstrapbutton:bb_type="success" >
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/button_housework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="家事リスト　　　　　　　　 　"
+            bootstrapbutton:bb_icon_left="fa-chevron-circle-right"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="small"
+            bootstrapbutton:bb_type="success" >
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
